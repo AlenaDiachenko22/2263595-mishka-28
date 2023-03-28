@@ -1,7 +1,7 @@
 # Личный проект «Мишка» 
 
 * Студент: [Елена Дьяченко](https://up.htmlacademy.ru/adaptive/28/user/2263595).
-* Наставник: `Неизвестно`.
+* Наставник: [Татьяна Симоненко](https://htmlacademy.ru/profile/tatien).
 
 ---
 
