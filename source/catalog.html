@@ -35,36 +35,36 @@
       <div class="catalog-products__container">
         <h2 class="visually-hidden">Список товаров</h2>
         <ul class="catalog-products__list catalog-list">
-          <li class="catalog-list__item">
-            <a class="catalog-list__link">
-              <img class="catalog-list__image" src="#" width="334" height="334" alt="Зайчик-попрыгайчик.">
-              <h3 class="catalog-list__title">Зайчик-попрыгайчик</h3>
+          <li class="catalog-list__item product">
+            <a class="product__link">
+              <img class="product__image" src="#" width="334" height="334" alt="Зайчик-попрыгайчик.">
+              <h3 class="product__title">Зайчик-попрыгайчик</h3>
             </a>
-            <p class="catalog-list__description">Рост 30 см, вес 200 г</p>
-            <b class="catalog-list__product-price">1 200 руб.</b>
-            <button class="catalog-list__button catalog-list__button--cart" type="button">
+            <p class="product__description">Рост 30 см, вес 200 г</p>
+            <b class="product__product-price">1 200 руб.</b>
+            <button class="product__button product__button--cart" type="button">
               <span class="visually-hidden">Добавить товар в корзину.</span>
             </button>
           </li>
-          <li class="catalog-list__item">
-            <a class="catalog-list__link">
-              <img class="catalog-list__image" src="#" width="334" height="334" alt="Корзинка для белья.">
-              <h3 class="catalog-list__title">Корзинка для белья</h3>
+          <li class="catalog-list__item product">
+            <a class="product__link">
+              <img class="product__image" src="#" width="334" height="334" alt="Корзинка для белья.">
+              <h3 class="product__title">Корзинка для белья</h3>
             </a>
-            <p class="catalog-list__description">Диаметр 15 см, высота 10 см</p>
-            <b class="catalog-list__product-price">690 руб.</b>
-            <button class="catalog-list__button catalog-list__button--cart" type="button">
+            <p class="product__description">Диаметр 15 см, высота 10 см</p>
+            <b class="product__product-price">690 руб.</b>
+            <button class="product__button product__button--cart" type="button">
               <span class="visually-hidden">Добавить товар в корзину.</span>
             </button>
           </li>
-          <li class="catalog-list__item">
-            <a class="catalog-list__link">
-              <img class="catalog-list__image" src="#" width="334" height="334" alt="Большая корзинка для игрушек.">
-              <h3 class="catalog-list__title">Большая корзинка для игрушек</h3>
+          <li class="catalog-list__item product">
+            <a class="product__link">
+              <img class="product__image" src="#" width="334" height="334" alt="Большая корзинка для игрушек.">
+              <h3 class="product__title">Большая корзинка для игрушек</h3>
             </a>
-            <p class="catalog-list__description">Диаметр 30 см, высота 30 см</p>
-            <b class="catalog-list__product-price">1 500 руб.</b>
-            <button class="catalog-list__button catalog-list__button--cart" type="button">
+            <p class="product__description">Диаметр 30 см, высота 30 см</p>
+            <b class="product__product-price">1 500 руб.</b>
+            <button class="product__button product__button--cart" type="button">
               <span class="visually-hidden">Добавить товар в корзину.</span>
             </button>
           </li>
@@ -75,7 +75,10 @@
     <section class="production-process">
       <div class="production-process__container">
         <h2 class="production-process__title">Процесс производства</h2>
-        <video class="production-process__video" width="260" height="150" poster="#"></video>
+        <a class="production-process__link video">
+          <img class="video__image" src="#" width="260" height="150">
+          <span class="video__play-button"></span>
+        </a>
         <p class="production-process__description">
           По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
         </p>
@@ -117,34 +120,36 @@
   </footer>
 
   <div class="modal-container">
-    <fieldset class="modal-container__modal modal-content">
-      <legend class="modal-content__title">Добавить в корзину</legend>
-      <p class="modal-content__text">Выберите размер:</p>
-      <ul class="modal-content__list">
-        <li class="modal-content__item radio">
-          <label class="radio__control">
-            <input class="visually-hidden radio__radio-button" type="radio" name="product-size" value="S" checked>
-            <span class="radio__mark"></span>
-            <span class="radio__value">S</span>
-          </label>
-        </li>
-        <li class="modal-content__item radio">
-          <label class="radio__control">
-            <input class="visually-hidden radio__radio-button" type="radio" name="product-size" value="M">
-            <span class="radio__mark"></span>
-            <span class="radio__value">M</span>
-          </label>
-        </li>
-        <li class="modal-content__item radio">
-          <label class="radio__control">
-            <input class="visually-hidden radio__radio-button" type="radio" name="product-size" value="L">
-            <span class="radio__mark"></span>
-            <span class="radio__value">L</span>
-          </label>
-        </li>
-      </ul>
-      <button class="modal-content__add modal-content__add--modal-button button" type="button">Добавить</button>
-    </fieldset>
+    <form class="modal-container__form modal-form">
+      <fieldset class="modal-form__content">
+        <legend class="modal-form__title">Добавить в корзину</legend>
+        <p class="modal-form__text">Выберите размер:</p>
+        <ul class="modal-form__list">
+          <li class="modal-form__item radio">
+            <label class="radio__control">
+              <input class="visually-hidden radio__radio-button" type="radio" name="product-size" value="S" checked>
+              <span class="radio__mark"></span>
+              <span class="radio__value">S</span>
+            </label>
+          </li>
+          <li class="modal-form__item radio">
+            <label class="radio__control">
+              <input class="visually-hidden radio__radio-button" type="radio" name="product-size" value="M">
+              <span class="radio__mark"></span>
+              <span class="radio__value">M</span>
+            </label>
+          </li>
+          <li class="modal-form__item radio">
+            <label class="radio__control">
+              <input class="visually-hidden radio__radio-button" type="radio" name="product-size" value="L">
+              <span class="radio__mark"></span>
+              <span class="radio__value">L</span>
+            </label>
+          </li>
+        </ul>
+        <button class="modal-form__add modal-form__add--modal-button button" type="submit">Добавить</button>
+      </fieldset>
+    </form>
   </div>
 
 </body>

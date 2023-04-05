@@ -38,13 +38,13 @@
       </div>
     </section>
 
-    <section class="description">
-      <div class="description__container">
-        <h2 class="description__title">Вязаные корзинки</h2>
-        <span class="description__explanation">Товар недели</span>
-        <p class="description__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх
+    <section class="week-product">
+      <div class="week-product__container">
+        <h2 class="week-product__title">Вязаные корзинки</h2>
+        <span class="week-product__description">Товар недели</span>
+        <p class="dweek-product__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх
           размерах.</p>
-        <table class="description__table site-table">
+        <table class="week-product__table site-table">
           <tr class="site-table__row">
             <td class="site-table__text">Цвет:</td>
             <td class="site-table__text">тиффани/серый</td>
@@ -58,9 +58,9 @@
             <td class="site-table__text">15 см</td>
           </tr>
         </table>
-        <img class="description__image" src="#" alt="Вязаные корзинки." width="260" height="315">
-        <span class="description__price">Цена: 990 руб.</span>
-        <a class="description__order button" href="#">Заказать</a>
+        <img class="week-product__image" src="#" alt="Вязаные корзинки." width="260" height="315">
+        <span class="week-product__price">Цена: 990 руб.</span>
+        <a class="week-product__order button" href="#">Заказать</a>
       </div>
     </section>
 
@@ -80,14 +80,36 @@
 
     <section class="reviews">
       <div class="reviews__container">
-        <blockquote class="reviews__item">
-          <h2 class="reviews__title">Отзывы</h2>
-          <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
-            лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
-            и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-          <cite class="reviews__author">Анастасия Красильникова</cite>
-          <span class="reviews__email">@misssssiskras</span>
-        </blockquote>
+        <h2 class="reviews__title">Отзывы</h2>
+        <ul class="reviews__list">
+          <li class="rewiews__item rewiews__item--current">
+            <blockquote class="reviews__quote">
+              <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
+                лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
+                и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+              <cite class="reviews__author">Анастасия Красильникова</cite>
+              <span class="reviews__telegram">@misssssiskras</span>
+            </blockquote>
+          </li>
+          <li class="rewiews__item">
+            <blockquote class="reviews__quote">
+              <p class="reviews__text">Я сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров
+                и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
+                больше лайков!</p>
+              <cite class="reviews__author">Екатерина Красильникова</cite>
+              <span class="reviews__telegram">@misssssiskras2</span>
+            </blockquote>
+          </li>
+          <li class="rewiews__item">
+            <blockquote class="reviews__quote">
+              <p class="reviews__text">Я двоюродная сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров
+                и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
+                больше лайков!</p>
+              <cite class="reviews__author">Елена Красильникова</cite>
+              <span class="reviews__telegram">@misssssiskras3</span>
+            </blockquote>
+          </li>
+        </ul>
         <button class="reviews__button slider-button">
           <span class="visually-hidden">Назад.</span>
         </button>
@@ -103,12 +125,12 @@
         <h2 class="contacts__title">Контакты</h2>
         <ul class="contacts__list">
           <li class="contacts__item">
-            <span class="contacts__email-title">e-mail:</span>
-            <a class="contacts__email" href="#">info@mimimishkashop.ru</a>
+            <span class="contacts__item-title">e-mail:</span>
+            <a class="contacts__description" href="#">info@mimimishkashop.ru</a>
           </li>
           <li class="contacts__item">
-            <span class="contacts__address-title">адрес:</span>
-            <p class="contacts__address">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</p>
+            <span class="contacts__item-title">адрес:</span>
+            <p class="contacts__description">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</p>
           </li>
         </ul>
         <img class="contacts__card" src="#" width="320" height="455" alt="Карта с нашим местоположением.">
@@ -151,34 +173,36 @@
   </footer>
 
   <div class="modal-container">
-    <fieldset class="modal-container__modal modal-content">
-      <legend class="modal-content__title">Добавить в корзину</legend>
-      <p class="modal-content__text">Выберите размер:</p>
-      <ul class="modal-content__list">
-        <li class="modal-content__item radio">
-          <label class="radio__control">
-            <input class="visually-hidden radio__radio-button" type="radio" name="product-size" value="S" checked>
-            <span class="radio__mark"></span>
-            <span class="radio__value">S</span>
-          </label>
-        </li>
-        <li class="modal-content__item radio">
-          <label class="radio__control">
-            <input class="visually-hidden radio__radio-button" type="radio" name="product-size" value="M">
-            <span class="radio__mark"></span>
-            <span class="radio__value">M</span>
-          </label>
-        </li>
-        <li class="modal-content__item radio">
-          <label class="radio__control">
-            <input class="visually-hidden radio__radio-button" type="radio" name="product-size" value="L">
-            <span class="radio__mark"></span>
-            <span class="radio__value">L</span>
-          </label>
-        </li>
-      </ul>
-      <button class="modal-content__add modal-content__add--modal-button button" type="button">Добавить</button>
-    </fieldset>
+    <form class="modal-container__form modal-form">
+      <fieldset class="modal-form__content">
+        <legend class="modal-form__title">Добавить в корзину</legend>
+        <p class="modal-form__text">Выберите размер:</p>
+        <ul class="modal-form__list">
+          <li class="modal-form__item radio">
+            <label class="radio__control">
+              <input class="visually-hidden radio__radio-button" type="radio" name="product-size" value="S" checked>
+              <span class="radio__mark"></span>
+              <span class="radio__value">S</span>
+            </label>
+          </li>
+          <li class="modal-form__item radio">
+            <label class="radio__control">
+              <input class="visually-hidden radio__radio-button" type="radio" name="product-size" value="M">
+              <span class="radio__mark"></span>
+              <span class="radio__value">M</span>
+            </label>
+          </li>
+          <li class="modal-form__item radio">
+            <label class="radio__control">
+              <input class="visually-hidden radio__radio-button" type="radio" name="product-size" value="L">
+              <span class="radio__mark"></span>
+              <span class="radio__value">L</span>
+            </label>
+          </li>
+        </ul>
+        <button class="modal-form__add modal-form__add--modal-button button" type="submit">Добавить</button>
+      </fieldset>
+    </form>
   </div>
 
 </body>
