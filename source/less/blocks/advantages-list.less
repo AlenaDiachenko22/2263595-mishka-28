@@ -1,0 +1,24 @@
+.list-item-margin() {
+  &:not(:last-child) {
+    margin-bottom: 83px;
+  }
+}
+
+.advantages-list {
+  list-style: none;
+  padding: 0;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+.advantages-list__item {
+  .list-item-margin();
+  &--ecology-icon::before {
+    background-image: url("../../img/advantages/icon-ecology.svg");
+    background-repeat: no-repeat;
+    width: 33px;
+    height: 38px;
+  }
+}
+
