@@ -7,11 +7,22 @@
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
-  color: #444444;
+  color: @text-color;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
   padding-top: 16px;
   padding-bottom: 16px;
   background-color: transparent;
+  position: relative;
+  &--decorative::after {
+    content: "";
+    .decorative-element();
+    bottom: -42px;
+  }
+  &--decorative-write::after {
+    content: "";
+    .decorative-element();
+    bottom: -51px;
+  }
 }

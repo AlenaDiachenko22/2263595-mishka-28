@@ -22,12 +22,12 @@
           </svg>
         <span class="visually-hidden">Открыть меню</span>
       </button>
-        <!-- <ul class="main-navigation__list site-list">
+        <ul class="main-navigation__list site-list">
           <li class="site-list__item"><a class="site-list__item-link" href="#">Каталог товаров</a></li>
           <li class="site-list__item"><a class="site-list__item-link" href="#">Вязание на заказ</a></li>
           <li class="site-list__item"><a class="site-list__item-link site-list__item-link--search-icon" href="#">Поиск по сайту</a></li>
           <li class="site-list__item"><a class="site-list__item-link site-list__item-link--cart-icon" href="#">Корзина: пока пуста</a></li>
-        </ul> -->
+        </ul>
     </nav>
   </div>
   </header>
@@ -35,12 +35,11 @@
   <main class="main-container">
     <h1 class="visually-hidden">Интернет-магазин милых вещей «Мишка»</h1>
     <section class="main-container__category category">
-      <div class="category__container">
-        <img class="category__hero-image" src="../source/img/content-images/hero-block.jpg" alt="Изображение предметов интерьера и детских игрушек.">
+      <div class="category__container category__container--hero-image">
         <h2 class="category__title title title--main">Милые штуки ручной<br> работы для дома</h2>
         <ul class="category__list category-list">
-          <li class="category-list__item category-list__item--light">Предметы<br> интерьера</li>
-          <li class="category-list__item category-list__item--dark">Детские<br> игрушки</li>
+          <li class="category-list__item category-list__item--light"><a class="category-list__link" href="interior-items.html">Предметы<br> интерьера</a></li>
+          <li class="category-list__item category-list__item--dark"><a class="category-list__link" href="kids-toys.html">Детские<br> игрушки</a></li>
         </ul>
       </div>
     </section>
@@ -65,9 +64,9 @@
             <td class="site-table__text">15 см</td>
           </tr>
         </table>
-        <img class="week-product__image" src="../source/img/knitted-basket.jpg" alt="Вязаные корзинки." width="260" height="315">
+        <img class="week-product__image" src="img/knitted-basket.jpg" alt="Вязаные корзинки." width="260" height="315">
         <span class="week-product__price">Цена: 990 руб.</span>
-        <a class="week-product__order button" href="#">Заказать</a>
+        <a class="week-product__order button button--decorative" href="#">Заказать</a>
       </div>
     </section>
 
@@ -75,12 +74,12 @@
       <div class="advantages__container">
         <h2 class="advantages__title title">Коротко о нас:</h2>
         <ul class="advantages__list advantages-list">
-          <li class="advantages-list__item advantages-list__item--ecology-icon">Экологически чистые материалы</li>
-          <li class="advantages-list__item advantages-list__item--price-icon">Скандинавский стиль по российской цене</li>
-          <li class="advantages-list__item advantages-list__item--like-icon">Увеличивает лайки на фотографиях</li>
-          <li class="advantages-list__item advantages-list__item--knitting-icon">Связано вручную с любовью и умилением</li>
+          <li class="advantages-list__item advantages-list__item--ecology-icon">Экологически<br> чистые материалы</li>
+          <li class="advantages-list__item advantages-list__item--price-icon">Скандинавский стиль по&nbsp;российской цене</li>
+          <li class="advantages-list__item advantages-list__item--like-icon">Увеличивает лайки на&nbsp;фотографиях</li>
+          <li class="advantages-list__item advantages-list__item--knitting-icon">Связано вручную<br> с любовью и умилением</li>
           <li class="advantages-list__item advantages-list__item--support-icon">Поддержка отечественного производителя</li>
-          <li class="advantages-list__item advantages-list__item--present-icon">Поставляется в подарочной упаковке</li>
+          <li class="advantages-list__item advantages-list__item--present-icon">Поставляется<br> в подарочной упаковке</li>
         </ul>
       </div>
     </section>
@@ -92,7 +91,7 @@
           <li class="reviews__item reviews__item--current">
             <blockquote class="reviews__quote">
               <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
-                лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
+                лайков, как<br> у популярных инстамамочек.<br> В отчаянии, я накупила аксессуаров и игрушек в Мишке,<br>
                 и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
               <cite class="reviews__author">Анастасия Красильникова</cite>
               <span class="reviews__telegram">@misssssiskras</span>
@@ -118,13 +117,21 @@
           </li>
         </ul>
         </blockquote>
-        <button class="reviews__button slider-button">
+      <div class="reviews__buttons">
+        <button class="reviews__button slider-button slider-button--back">
+          <svg width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50 11H7.7L15.8 2.8L13 0L0 13L13 26L15.8 23.2L7.7 15H50V11Z" fill="black"/>
+            </svg>
           <span class="visually-hidden">Назад.</span>
         </button>
-        <button class="reviews__button slider-button">
+        <button class="reviews__button slider-button slider-button--next">
+          <svg width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 11H42.3L34.2 2.8L37 0L50 13L37 26L34.2 23.2L42.3 15H0V11Z" fill="black"/>
+            </svg>
           <span class="visually-hidden">Вперёд.</span>
         </button>
-        <a class="reviews__write button" href="#">Написать</a>
+      </div>
+        <a class="reviews__write button button--decorative-write" href="#">Написать</a>
       </div>
     </section>
 
@@ -134,14 +141,14 @@
         <ul class="contacts__list contacts-list">
           <li class="contacts-list__item">
             <span class="contacts-list__item-title">e-mail:</span>
-            <a class="contacts__description contacts__description--link" href="#">info@mimimishkashop.ru</a>
+            <a class="contacts-list__description contacts__description--link" href="#">info@mimimishkashop.ru</a>
           </li>
           <li class="contacts-list__item">
             <span class="contacts-list__item-title">адрес:</span>
-            <p class="contacts-list__description">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</p>
+            <p class="contacts-list__description">г. Санкт-Петербург<br> ул. Большая Конюшенная д. 19/8, офис 101</p>
           </li>
         </ul>
-        <img class="contacts__card" src="../source/img/map.jpg" width="320" height="455" alt="Карта с нашим местоположением.">
+        <img class="contacts__card" src="img/map.jpg" width="320" height="455" alt="Карта с нашим местоположением.">
         <a class="contacts__write-us button" href="#">Напишите нам</a>
       </div>
     </section>
@@ -154,18 +161,18 @@
       <div class="main-footer__social social">
         <h3 class="visually-hidden">Мы в социальных сетях.</h3>
         <ul class="social__list social-list">
-          <li class="social-list__item">
+          <li class="social-list__item social-list__item">
             <a class="social-list__link social-list__link--vkontacte" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">Мы в Вконтакте.</span>
             </a>
           </li>
           <li class="social-list__item">
-            <a class="social-list__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+            <a class="social-list__link social-list__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">Мы в Ютубе.</span>
             </a>
           </li>
           <li class="social-list__item">
-            <a class="social-list__link social__link--telegram" href="https://t.me/htmlacademy">
+            <a class="social-list__link social-list__link--telegram" href="https://t.me/htmlacademy">
               <span class="visually-hidden">Мы в Телеграме.</span>
             </a>
           </li>
@@ -173,38 +180,35 @@
       </div>
       <div class="main-footer__copyright copyright">
         <h3 class="copyright__text">Разработано</h3>
-        <a class="copyright__link academy-logo" href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="visually-hidden">Логотип HTML Academy.</span>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="copyright__logo logo-academy" width="26.9" height="34.1" src="img/logo/htmlacademy.svg" alt="Логотип HTML Academy.">
         </a>
       </div>
     </div>
   </footer>
 
-  <div class="modal-container">
+  <div class="modal-container modal-container__close">
     <form class="modal-container__form modal-form">
       <fieldset class="modal-form__content">
-        <legend class="modal-form__title">Добавить в корзину</legend>
+        <legend class="modal-form__title">Добавить<br> в корзину</legend>
         <p class="modal-form__text">Выберите размер:</p>
         <ul class="modal-form__list">
           <li class="modal-form__item radio">
             <label class="radio__control">
               <input class="visually-hidden radio__radio-button" type="radio" name="product-size" value="S" checked>
-              <span class="radio__mark"></span>
-              <span class="radio__value">S</span>
+              <span class="radio__mark">S</span>
             </label>
           </li>
           <li class="modal-form__item radio">
             <label class="radio__control">
               <input class="visually-hidden radio__radio-button" type="radio" name="product-size" value="M">
-              <span class="radio__mark"></span>
-              <span class="radio__value">M</span>
+              <span class="radio__mark">M</span>
             </label>
           </li>
           <li class="modal-form__item radio">
             <label class="radio__control">
               <input class="visually-hidden radio__radio-button" type="radio" name="product-size" value="L">
-              <span class="radio__mark"></span>
-              <span class="radio__value">L</span>
+              <span class="radio__mark">L</span>
             </label>
           </li>
         </ul>
