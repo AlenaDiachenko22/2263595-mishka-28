@@ -1,0 +1,35 @@
+.radio-form__control {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.radio-form__item&:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.radio-form__mark {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 2px solid @main-color;
+}
+
+.radio-form__input:checked + .radio-form__mark::before {
+  content: "";
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  left: 50%;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  background-color: #62d1ba;
+  position: absolute;
+}
+
+.radio-form__label {
+  margin-left: 59px;
+}

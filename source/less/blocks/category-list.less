@@ -1,0 +1,41 @@
+.category-list {
+  font-size: 19px;
+  list-style: none;
+  font-weight: 700;
+  line-height: 24px;
+  color: @element-color;
+  padding: 0;
+}
+
+.category-list__item {
+  min-height: 103px;
+  padding-left: 30px;
+  padding-top: 24px;
+  box-sizing: border-box;
+  &--light {
+    background-color: @main-color-light;
+    background-image: url("../../img/icon/interior.svg");
+    background-repeat: no-repeat;
+    background-position: 244px 23px;
+  }
+  &--dark {
+    background-color: @main-color-dark;
+    background-image: url("../../img/icon/toy.svg");
+    background-repeat: no-repeat;
+    background-position: 233px 21px;
+  }
+}
+
+.category-list__link {
+  text-decoration: none;
+  color: @element-color;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
