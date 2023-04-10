@@ -1,13 +1,13 @@
 .input {
   width: 260px;
   border: none;
-  box-shadow: inset 0 -2px 0 #000000;
+  box-shadow: inset 0 -2px 0 @main-color;
   padding: 17.5px 0;
   &::placeholder {
-    font-family: "Open Sans", sans-serif;
+    .font-family();
     font-size: 17px;
     line-height: 18px;
-    color: #000000;
+    color: @main-color;
     opacity: 0.3;
   }
 }
