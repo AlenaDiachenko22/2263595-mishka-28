@@ -1,12 +1,21 @@
 .category__container {
   .container-large();
   position: relative;
+
+  @media (min-width: @tablet-width) {
+    height: 746px;
+  }
 }
 
 .category__title {
   .category-margin();
   padding-top: 73px;
-  padding-bottom: 120px;
+  margin-bottom: 120px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 155px;
+    margin-bottom: 372px;
+  }
 }
 
 .category__list {
@@ -17,5 +26,15 @@
   background-image: url("../../img/content-images/hero-block.jpg");
   background-repeat: no-repeat;
   background-position: 0 -17px;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    background-size: 668px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 763px;
+    background-position: center;
+  }
 }
 

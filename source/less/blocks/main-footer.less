@@ -7,4 +7,29 @@
 
 .main-footer__copyright {
   display: flex;
+  width: 181px;
+}
+
+.main-footer__logo-image {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .main-footer__container {
+    width: @tablet-width;
+    padding: 51px 50px 58px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .main-footer__logo-image {
+    display: block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-footer__container {
+    width: @desktop-width;
+  }
 }

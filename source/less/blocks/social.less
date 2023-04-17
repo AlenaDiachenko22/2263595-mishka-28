@@ -3,7 +3,10 @@
   margin: 0 auto;
   margin-bottom: 53.5px;
   position: relative;
-  &::after {
+}
+
+@media (max-width: @tablet-width) {
+  .social__list::after {
     content: "";
     width: 260px;
     height: 1px;
@@ -11,5 +14,11 @@
     position: absolute;
     left: -59px;
     bottom: -29px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .social__list {
+    margin: 0;
   }
 }
