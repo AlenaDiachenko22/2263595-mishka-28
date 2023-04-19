@@ -16,6 +16,11 @@
   background-color: transparent;
   position: relative;
 
+  @media (min-width: @tablet-width) {
+    width: 350px;
+    margin: 0 auto;
+  }
+
   &--decorative-write::after {
     content: "";
     .decorative-element();
