@@ -8,6 +8,10 @@
   box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
   opacity: 100%;
   box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    padding: 37.5px 92px 46px 93px;
+  }
 }
 
 .modal-form__content {
@@ -22,6 +26,15 @@
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 14px;
+  width: 160px;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 57px;
+    width: 381px;
+    margin-bottom: 11px;
+  }
 }
 
 .modal-form__text {
@@ -29,6 +42,11 @@
   text-align: center;
   margin: 0;
   margin-bottom: 21.5px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+    margin-bottom: 19.5px;
+  }
 }
 
 .modal-form__add--modal-button {
@@ -36,14 +54,23 @@
   color: @element-color;
   border: none;
   margin-top: 31px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  font-family: @main-font;
 }
 
 .modal-form__list {
   display: flex;
-  width: 100%;
+  width: 260px;
   justify-content: space-between;
   padding: 0;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 350px;
+    margin: 0 auto;
+  }
 }
 
 .modal-form__item {

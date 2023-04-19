@@ -1,4 +1,19 @@
 .main-container__category {
   margin-bottom: 31px;
   position: relative;
+  z-index: -1;
+
+  @media (min-width: @tablet-width) {
+    width: 668px;
+    margin: 0 auto;
+    margin-top: -64px;
+    margin-bottom: 51.5px;
+    z-index: -1;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1050px;
+    margin-top: -64px;
+    margin-bottom: 71px;
+  }
 }

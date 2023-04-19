@@ -2,10 +2,61 @@
   .container-small();
   border: 1px solid @border-color;
   margin-bottom: 58px;
+
+  @media (min-width: @tablet-width) {
+    width: 668px;
+    display: grid;
+    grid-template-columns: 668px;
+    grid-template-rows: 455px 41px min-content 24.5px min-content 40.5px min-content 46px;
+    margin-bottom: 64px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1050px;
+    grid-template-columns: 682.65px 79.08px 252.24px 36.03px;
+    grid-template-rows: 96px min-content 27.5px min-content 51.5px min-content 60px;
+    margin-bottom: 105px;
+  }
 }
 
 .production-process__title {
   margin: 21.5px 13px 26.5px 91px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../../img/icon/video.svg");
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 22px;
+    top: 13px;
+    left: -57px;
+
+    @media (min-width: @tablet-width) {
+      top: -2px;
+      left: -65px;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: -59px;
+      left: 0;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    margin: 0 0 0 105px;
+    grid-row: 3/4;
+    grid-column: 1/2;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 178px;
+    grid-row: 2/3;
+    grid-column: 3/4;
+    margin: 0;
+  }
 }
 
 .production-process__description {
@@ -13,8 +64,37 @@
   line-height: 24px;
   color: @text-color;
   margin: 0 0 41px 34px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 15px;
+    line-height: 30px;
+    margin: 0 40px 0 40px;
+    grid-row: 5/6;
+    grid-column: 1/2;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    grid-row: 4/5;
+    grid-column: 3/4;
+  }
 }
 
 .production-process__make-order {
   margin-bottom: 33px;
+
+  @media (min-width: @tablet-width) {
+    width: 584px;
+    margin: 0;
+    grid-row: 7/8;
+    grid-column: 1/2;
+    justify-self: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 230px;
+    grid-row: 6/7;
+    grid-column: 3/4;
+    justify-self: start;
+  }
 }

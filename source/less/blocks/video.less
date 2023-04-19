@@ -1,4 +1,36 @@
 .video__image {
   display: block;
   margin-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    width: 668px;
+    height: 455px;
+    margin: 0;
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 682.65px;
+    grid-row: 1/8;
+    grid-column: 1/2;
+  }
+}
+
+.video {
+  position: relative;
+}
+
+.video__play-button {
+  display: block;
+  width: 100.6px;
+  height: 76.8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+
+  @media (min-width: @desktop-width) {
+    top: 228.4px;
+  }
 }

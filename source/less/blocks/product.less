@@ -1,11 +1,33 @@
 .product {
   list-style: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
 }
 
 .product__image {
   display: block;
+
+  @media (min-width: @tablet-width) {
+    width: 334px;
+    height: 334px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 316px;
+    height: 462px;
+  }
 }
 
 .product__container {
   margin-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 }

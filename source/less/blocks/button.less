@@ -15,15 +15,21 @@
   padding-bottom: 16px;
   background-color: transparent;
   position: relative;
-  &--decorative::after {
-    content: "";
-    .decorative-element();
-    bottom: -42px;
+
+  @media (min-width: @tablet-width) {
+    width: 350px;
+    margin: 0 auto;
   }
+
   &--decorative-write::after {
     content: "";
     .decorative-element();
     bottom: -51px;
+
+    @media (min-width: @tablet-width) {
+      bottom: 0;
+      background-image: none;
+    }
   }
   &--catalog-button {
     width: 192px;
@@ -33,5 +39,9 @@
     font-size: 17px;
     line-height: 16px;
     padding: 18px;
+
+    @media (min-width: @tablet-width) {
+      width: 230px;
+    }
   }
 }
