@@ -2,6 +2,11 @@
   background-color: #f1f1f1;
   padding: 42px 36px;
   box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    padding: 50px 0 50px 0;
+    z-index: -1;
+  }
 }
 
 .header-container__title {
@@ -9,4 +14,12 @@
   font-size: 27px;
   text-align: center;
   margin: 31.5px 0 31.5px 0;
+
+  @media (min-width: @tablet-width) {
+    margin: 51px 0 25px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 52px 0 46px 0;
+  }
 }

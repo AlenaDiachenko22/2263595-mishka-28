@@ -6,6 +6,11 @@
   color: @main-color-light;
   padding: 0;
   position: relative;
+
+  @media (min-width: @tablet-width) {
+    width: 88px;
+    display: block;
+  }
   &--decor-line::after {
     content: "";
     position: absolute;
@@ -14,5 +19,9 @@
     background-color: #62d1ba;
     top: 8px;
     left: 60px;
+
+    @media (min-width: @tablet-width) {
+      position: static;
+    }
   }
 }

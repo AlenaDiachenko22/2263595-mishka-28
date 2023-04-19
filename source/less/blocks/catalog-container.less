@@ -1,4 +1,35 @@
 .catalog-container__catalog-header {
-  .container-large();
+  width: 100vw;
+  min-width: 320px;
+  margin: 0 auto;
   margin-bottom: 30px;
+  position: relative;
+
+  &::after {
+    @media (min-width: @tablet-width) {
+      content: "";
+      position: absolute;
+      background-image: url("../../img/decorative/zigzag-fill-desktop.svg");
+      height: 24px;
+      width: 100vw;
+      bottom: -12px;
+    }
+
+    @media (min-width: @desktop-width) {
+      height: 34px;
+      bottom: -17px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 100vw;
+    margin-top: -64px;
+    margin-bottom: 79px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100vw;
+    min-height: 272px;
+    margin-bottom: 128px;
+  }
 }

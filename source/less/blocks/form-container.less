@@ -1,4 +1,35 @@
 .form-container__form-header {
-  .container-large();
+  width: 100vw;
+  margin: 0 auto;
   margin-bottom: 17px;
+  position: relative;
+  background-color: #f1f1f1;
+
+  &::after {
+    @media (min-width: @tablet-width) {
+      content: "";
+      position: absolute;
+      background-image: url("../../img/decorative/zigzag-fill-desktop.svg");
+      height: 24px;
+      width: 100vw;
+      bottom: -12px;
+    }
+
+    @media (min-width: @desktop-width) {
+      height: 34px;
+      bottom: -17px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    margin-top: -64px;
+    margin-bottom: 66px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+    min-height: 272px;
+    margin-bottom: 115.5px;
+  }
 }

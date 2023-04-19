@@ -150,8 +150,18 @@
   &--decorative::after {
     content: "";
     .decorative-element();
-    bottom: -69px;
-    left: -50px;
+    bottom: -36px;
+    left: -30px;
+
+    @media (min-width: @tablet-width) {
+      bottom: -90px;
+      left: -50px;
+    }
+
+    @media (min-width: @desktop-width) {
+      bottom: -96px;
+      left: -175px;
+    }
   }
 
   @media (min-width: @tablet-width) {

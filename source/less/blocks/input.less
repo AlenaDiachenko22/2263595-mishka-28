@@ -13,5 +13,39 @@
     line-height: 18px;
     color: @main-color;
     opacity: 0.3;
+
+    @media (min-width: @tablet-width) {
+      font-size: 19px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 375px;
+    padding: 17px 0 17px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 573px;
+    padding: 17px 0 17px 0;
+  }
+
+  &--name {
+    @media (min-width: @tablet-width) {
+      width: 428px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 626px;
+    }
+  }
+
+  &--contacts {
+    @media (min-width: @tablet-width) {
+      width: 501px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 700px;
+    }
   }
 }
