@@ -1,9 +1,13 @@
 .category__container {
-  .container-large();
   position: relative;
 
   @media (min-width: @tablet-width) {
     height: 746px;
+  }
+
+  @media (max-width: 767px) {
+    margin: 0 auto;
+    min-width: 320px;
   }
 }
 
@@ -25,7 +29,7 @@
 .category__container--hero-image {
   background-image: url("../../img/content-images/hero-block.jpg");
   background-repeat: no-repeat;
-  background-position: 0 -17px;
+  background-position: center -17px;
 
   @media (min-width: @tablet-width) {
     width: 100%;
