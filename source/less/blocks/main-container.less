@@ -7,13 +7,12 @@
 .main-container__category {
   margin-bottom: 31px;
   position: relative;
-  z-index: -1;
+  z-index: 1;
 
   @media (min-width: @tablet-width) {
     width: 668px;
     margin: 0 auto;
     margin-bottom: 51.5px;
-    z-index: -1;
   }
 
   @media (min-width: @desktop-width) {
@@ -21,3 +20,21 @@
     margin-bottom: 71px;
   }
 }
+
+
+@media (min-width: @tablet-width) {
+  .main-container__wrapper {
+    position: relative;
+
+    &::before {
+      content: "";
+      background-image: url("../../img/decorative/zigzag-desktop.svg");
+      width: 100vw;
+      height: 24px;
+      position: absolute;
+      bottom: -6px;
+      z-index: 2;
+    }
+  }
+}
+

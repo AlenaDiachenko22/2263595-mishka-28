@@ -4,6 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.css">
   <title>Интернет-магазин «Мишка»</title>
 </head>
@@ -12,12 +16,12 @@
   <header class="main-header">
     <div class="main-header__container">
       <a class="main-header__logo" href="index.html">
-        <img class="main-header__logo-image main-header__logo-image--mobile" src="img/mishka-logo-mobile.svg" width="86"
-          height="35" alt="Интернет-магазин «Мишка».">
-        <img class="main-header__logo-image main-header__logo-image--tablet" src="img/logo/mishka-logo-tablet.svg"
-          width="113" height="46" alt="Интернет-магазин «Мишка».">
-        <img class="main-header__logo-image main-header__logo-image--desktop" src="img/logo/mishka-logo-desktop.svg"
-          width="149" height="72" alt="Интернет-магазин «Мишка».">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/logo/mishka-logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo/mishka-logo-tablet.svg">
+          <img class="main-header__logo-image" src="img/logo/mishka-logo-mobile.svg" width="86" height="35"
+            alt="Интернет-магазин «Мишка».">
+        </picture>
       </a>
       <nav class="main-navigation main-navigation--opened main-navigation--nojs">
         <button class="main-navigation__toggle" type="button">

@@ -1,6 +1,7 @@
 .main-header__container {
   .container-large();
   position: relative;
+  z-index: 3;
 }
 
 .main-header__logo-image {
@@ -13,30 +14,6 @@
     top: 22px;
     left: 48px;
     box-shadow: none;
-  }
-
-  &--tablet {
-    display: none;
-
-    @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-      display: block;
-    }
-  }
-
-  &--mobile {
-    display: block;
-
-    @media (min-width: @tablet-width) {
-      display: none;
-    }
-  }
-
-  &--desktop {
-    display: none;
-
-    @media (min-width: @desktop-width) {
-      display: block;
-    }
   }
 }
 
@@ -60,7 +37,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .main-header__logo-image--desktop {
+  .main-header__logo-image {
     position: absolute;
     top: 9px;
     left: 50%;
@@ -70,4 +47,5 @@
     margin: 0;
   }
 }
+
 
