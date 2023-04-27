@@ -1,16 +1,13 @@
 .decorative-element() {
   background-image: url("../../img/decorative/zigzag.svg");
-  background-repeat: no-repeat;
   position: absolute;
-  width: 320px;
+  width: 100vw;
   height: 6px;
-  left: -30px;
+  min-width: 320px;
 
   @media (min-width: @tablet-width) {
     background-image: url("../img/decorative/zigzag-line-tablet.svg");
-    background-repeat: no-repeat;
-    position: absolute;
-    width: @tablet-width;
+    width: 100vw;
     height: 17px;
   }
 
