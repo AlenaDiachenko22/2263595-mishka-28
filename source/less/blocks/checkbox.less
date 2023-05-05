@@ -20,6 +20,14 @@
   box-sizing: border-box;
   border: 2px solid @main-color;
 
+  &:hover {
+    border: 2px solid #62d1ba;
+  }
+
+  &:active {
+    border: 2px solid rgba(0, 0, 0, 0.3);
+  }
+
   @media (min-width: @tablet-width) {
     width: 52px;
     height: 52px;
@@ -28,7 +36,7 @@
 
 .checkbox__input:checked + .checkbox__mark::before {
   content: "";
-  background-image: url("../../img/icon/Tick.svg");
+  background-image: url("../../img/stack.svg#tick");
   background-repeat: no-repeat;
   width: 23.22px;
   height: 16.08px;

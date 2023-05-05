@@ -5,11 +5,15 @@
 .radio__mark {
   padding: 18px 34px;
   box-sizing: border-box;
-  border: 2px solid rgba(68, 68, 68, 0.1);
+  border: 2px solid fade(#444444, 10%);
   display: block;
   line-height: 16px;
   font-size: 17px;
   font-weight: 700;
+
+  &:hover {
+    border: 2px solid fade(#444444, 30%);
+  }
 
   @media (min-width: @tablet-width) {
     padding: 16.08px 50px;

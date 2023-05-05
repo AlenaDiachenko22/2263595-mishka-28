@@ -22,15 +22,27 @@
 }
 
 .video__play-button {
-  display: block;
-  width: 100.6px;
-  height: 76.8px;
+  background: url("../../img/stack.svg#play") no-repeat;
+  width: 101px;
+  height: 77px;
+  z-index: 2;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
 
   @media (min-width: @desktop-width) {
-    top: 228.4px;
+    top: 240%;
+  }
+
+  &:hover {
+    width: 121px;
+    height: 91px;
+  }
+
+  &:active {
+    width: 81px;
+    height: 62px;
+    opacity: 0.3;
   }
 }

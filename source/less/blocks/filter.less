@@ -136,6 +136,8 @@
 }
 
 .filter__contacts-item {
+  position: relative;
+
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
@@ -155,6 +157,7 @@
 
 .filter__input {
   margin-bottom: 24px;
+
   &--last {
     margin: 0;
   }
@@ -193,21 +196,31 @@
   padding: 17px;
   margin-bottom: 17px;
   display: block;
+  font-size: 17px;
+  font-family: @main-font;
+
+  &:hover {
+    border: 2px solid #62d1ba;
+  }
+
+  &:not(:placeholder-shown) {
+    border: 2px solid #62d1ba;
+  }
+
   &::placeholder {
     font-family: @main-font;
     font-size: 17px;
     line-height: 18px;
     color: @main-color;
     opacity: 0.3;
-  }
 
-  &::placeholder {
     @media (min-width: @tablet-width) {
       font-size: 19px;
     }
   }
 
   @media (min-width: @tablet-width) {
+    font-size: 19px;
     width: 501px;
     grid-row: 1/2;
     grid-column: 3/5;
@@ -294,4 +307,70 @@
   }
 }
 
+.filter__email-wrapper {
+  position: relative;
 
+  &:hover .filter__mail-icon {
+    fill: fade(#62d1ba, 100%);
+    opacity: 100%;
+  }
+}
+
+.filter__contacts-input:not(:placeholder-shown) + .filter__mail-icon,
+.filter__contacts-input:not(:placeholder-shown) + .filter__phone-icon {
+  fill: fade(#62d1ba, 100%);
+  opacity: 100%;
+}
+
+.filter__mail-icon {
+  position: absolute;
+  right: 3px;
+  top: 16px;
+  opacity: 0.2;
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    right: 22px;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: 4px;
+  }
+}
+
+.filter__phone-wrapper {
+  position: relative;
+
+  &:hover .filter__phone-icon {
+    fill: fade(#62d1ba, 100%);
+    opacity: 100%;
+  }
+}
+
+.filter__phone-icon {
+  position: absolute;
+  right: 3px;
+  top: 16px;
+  opacity: 0.2;
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    right: 22px;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: 4px;
+  }
+}
+
+.filter__contacts-item--tel:hover::after {
+  background-color: fade(#62d1ba, 100%);
+}
+
+.filter__contacts-item--email:hover::after {
+  background-color: fade(#62d1ba, 100%);
+}
+
+.filter__contacts-item .filter__contacts-item--tel::after {
+  background-color: fade(#62d1ba, 100%);
+}

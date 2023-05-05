@@ -2,6 +2,14 @@
   padding: 27.5px 27px 26.5px 28px;
   border: 1px solid @border-color;
 
+  &:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+
   @media (min-width: @tablet-width) {
     width: 335px;
     padding: 27px 39px 25.5px 34px;
@@ -21,13 +29,30 @@
 }
 
 .product-text__button {
+  width: 21px;
+  height: 18px;
   border: none;
-  background-color: transparent;
-  padding: 0;
+  cursor: pointer;
+
+  -webkit-mask: url("../../img/stack.svg#cart") no-repeat;
+  mask: url("../../img/stack.svg#cart") no-repeat;
+
+  mask-size: 21px 18px;
+
+  background-color: fade(#000000, 20%);
+
+  &:hover {
+    background-color: fade(#63d1bb, 100%);
+  }
+
+  &:active {
+    background-color: fade(#63d1bb, 30%);
+  }
 }
 
 .product-text__icon {
   display: block;
+  cursor: pointer;
 }
 
 .product-text__title {
@@ -59,6 +84,7 @@
 .product-text__wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: relative;
 
   &::before {
