@@ -4,7 +4,7 @@
   align-items: center;
 }
 
-.radio-form__item&:not(:last-child) {
+.radio-form__item:not(:last-child) {
   margin-bottom: 11px;
 
   @media (min-width: @tablet-width) {
@@ -19,6 +19,14 @@
   border-radius: 50%;
   box-sizing: border-box;
   border: 2px solid @main-color;
+
+  &:hover {
+    border: 2px solid #62d1ba;
+  }
+
+  &:active {
+    border: 2px solid rgba(0, 0, 0, 0.3);
+  }
 
   @media (min-width: @tablet-width) {
     width: 52px;

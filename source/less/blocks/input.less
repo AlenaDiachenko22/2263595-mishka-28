@@ -7,6 +7,15 @@
   font-size: 19px;
   line-height: 18px;
   color: @text-color;
+
+  &:hover {
+    box-shadow: inset 0 -2px 0 #62d1ba;
+  }
+
+  &:not(:placeholder-shown) {
+    box-shadow: inset 0 -2px 0 #62d1ba;
+  }
+
   &::placeholder {
     font-family: @main-font;
     font-size: 17px;
@@ -48,4 +57,21 @@
       width: 700px;
     }
   }
+
+  &--contacts-email {
+    &:valid .filter__mail-icon {
+      fill: red;
+      opacity: 100%;
+    }
+
+    @media (min-width: @tablet-width) {
+      width: 501px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 700px;
+    }
+  }
 }
+
+

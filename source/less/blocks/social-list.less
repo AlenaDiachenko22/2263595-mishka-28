@@ -11,17 +11,29 @@
 }
 
 .social-list__link {
+  background-color: @main-color;
+
+  &:hover {
+    background-color: fade(#46c1ae, 100%);
+  }
+
+  &:active {
+    background-color: fade(#46c1ae, 30%);
+  }
+
   &--vkontacte {
     .footer-icon();
-    background: url("../../img/icon/vkontakte.svg") no-repeat;
+    -webkit-mask: url("../../img/stack.svg#icon-vk") no-repeat;
+    mask: url("../../img/stack.svg#icon-vk") no-repeat;
   }
   &--youtube {
     .footer-icon();
-    background: url("../../img/icon/youtube.svg") no-repeat;
+    -webkit-mask: url("../../img/stack.svg#icon-youtube") no-repeat;
+    mask: url("../../img/stack.svg#icon-youtube") no-repeat;
   }
   &--telegram {
     .footer-icon();
-    background: url("../../img/icon/telegram.svg") no-repeat;
+    -webkit-mask: url("../../img/stack.svg#icon-telegram") no-repeat;
+    mask: url("../../img/stack.svg#icon-telegram") no-repeat;
   }
-
 }
