@@ -4,11 +4,19 @@
   line-height: 24px;
   color: @element-color;
   padding: 0;
+  position: absolute;
+  bottom: -73px;
 
   @media (min-width: @tablet-width) {
     display: flex;
     font-size: 20px;
     line-height: 30px;
+    width: 100%;
+    bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    bottom: -12px;
   }
 
   @media (min-width: @desktop-width) {
