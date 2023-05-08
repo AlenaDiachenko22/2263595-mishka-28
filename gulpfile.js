@@ -28,6 +28,16 @@ export const styles = () => {
     .pipe(browser.stream());
 }
 
+// Autoprefixer
+
+export const css = () => {
+  return gulp.src('./src/*.css')
+    .pipe(postcss([
+      autoprefixer(),
+    ]))
+    .pipe(gulp.dest('./dest'))
+};
+
 // HTML
 
 export const html = () => {
