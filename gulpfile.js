@@ -31,11 +31,11 @@ export const styles = () => {
 // Autoprefixer
 
 export const css = () => {
-  return gulp.src('./src/*.css')
+  return gulp.src('source/css/*.css')
     .pipe(postcss([
       autoprefixer(),
     ]))
-    .pipe(gulp.dest('./dest'))
+    .pipe(gulp.dest('build/css'))
 };
 
 // HTML
@@ -138,7 +138,7 @@ const reload = (done) => {
 
 const watcher = () => {
   gulp.watch('source/less/**/*.less', gulp.series(styles));
-  gulp.watch('source/*.html').on('change', browser.reload);
+  gulp.watch('source/*.html', gulp.series(html, reload));
 }
 
 // Build
