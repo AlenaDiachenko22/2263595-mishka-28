@@ -9,6 +9,7 @@
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
   <title>Интернет-магазин «Мишка»</title>
 </head>
 
@@ -49,7 +50,7 @@
   </header>
   <main class="form-container">
     <header class="form-container__form-header header-container">
-      <h1 class="header-container__title title">Вязание на заказ</h1>
+      <h1 class="header-container__title title title--main-form">Вязание на заказ</h1>
     </header>
     <section class="filter">
       <div class="filter__container filter-container">
@@ -107,13 +108,13 @@
               <legend class="filter__title filter-title filter-title--decor-line">ФИО</legend>
               <ul class="filter__name-list">
                 <li class="filter__item"><label class="filter__label filter-text" for="username">Имя:</label> <input
-                    class="filter__input input input--name" type="text" id="username" name="username"
+                    class="filter__input filter-input filter-input--name" type="text" id="username" name="username"
                     placeholder="Введите ваше имя*" required></li>
                 <li class="filter__item"><label class="filter__label filter-text filter-text"
-                    for="surname">Фамилия:</label> <input class="filter__input input" type="text" id="surname"
+                    for="surname">Фамилия:</label> <input class="filter__input filter-input" type="text" id="surname"
                     name="surname" placeholder="Укажите фамилию*" required></li>
                 <li class="filter__item"><label class="filter__label filter-text filter-text"
-                    for="patronymic">Отчество:</label> <input class="filter__input input filter__input--last"
+                    for="patronymic">Отчество:</label> <input class="filter__input filter-input filter-input__input--last"
                     type="text" id="patronymic" name="patronymic" placeholder="Отчество, если желаете"></li>
               </ul>
             </div>
@@ -123,16 +124,16 @@
               <legend class="visually-hidden">Контакты</legend>
               <ul class="filter__contacts-list">
                 <li class="filter__contacts-item"><label
-                    class="filter__contacts-label filter-title filter-title--decor-line" for="phone">Тел</label>
-                  <div class="filter__phone-wrapper"><input class="filter__contacts-input input input--contacts"
-                      type="tel" id="phone" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required> <svg
+                    class="filter__contacts-label filter-title filter-title--decor-line-tel" for="phone">Тел</label>
+                  <div class="filter__phone-wrapper">
+                    <input class="filter__contacts-input input-contacts input-contacts--contacts" type="tel" id="phone" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required> <svg
                       class="filter__phone-icon" width="25" height="24">
                       <use xlink:href="img/sprite.svg#phone"></use>
                     </svg></div>
                 </li>
                 <li class="filter__contacts-item"><label
-                    class="filter__contacts-label filter-title filter-title--decor-line" for="email">E-mail</label>
-                  <div class="filter__email-wrapper"><input class="filter__contacts-input input input--contacts-email"
+                    class="filter__contacts-label filter-title filter-title--decor-line-email" for="email">E-mail</label>
+                  <div class="filter__email-wrapper"><input class="filter__contacts-input input-contacts input-contacts--contacts-email"
                       type="email" id="email" name="email" placeholder="Ваш Email*" required> <svg
                       class="filter__mail-icon" width="32" height="21">
                       <use xlink:href="img/sprite.svg#mail"></use>

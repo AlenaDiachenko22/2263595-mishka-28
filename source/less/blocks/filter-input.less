@@ -1,0 +1,51 @@
+.filter-input {
+  width: 260px;
+  border: none;
+  box-shadow: inset 0 -2px 0 @main-color;
+  padding: 12.4px 0 14px;
+  font-family: @main-font;
+  font-size: 19px;
+  line-height: 18px;
+  color: @text-color;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: 375px;
+    padding: 12.4px 18px 14px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 573px;
+    padding: 13.4px 18px 13px;
+  }
+
+  &--last {
+    margin: 0;
+  }
+
+  &--name {
+    @media (min-width: @tablet-width) {
+      width: 428px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 626px;
+    }
+  }
+
+  &:not(:placeholder-shown) {
+    box-shadow: inset 0 -2px 0 #62d1ba;
+  }
+
+  &::placeholder {
+    font-family: @main-font;
+    font-size: 17px;
+    line-height: 18px;
+    color: @main-color;
+    opacity: 0.3;
+
+    @media (min-width: @tablet-width) {
+      font-size: 19px;
+    }
+  }
+}

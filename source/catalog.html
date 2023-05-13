@@ -9,6 +9,7 @@
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
   <title>Интернет-магазин «Мишка»</title>
 </head>
 
@@ -49,7 +50,7 @@
   </header>
   <main class="catalog-container">
     <header class="catalog-container__catalog-header header-container">
-      <h1 class="header-container__title title">Каталог товаров</h1>
+      <h1 class="header-container__title title title--main-catalog">Каталог товаров</h1>
     </header>
     <section class="catalog-products">
       <div class="catalog-products__container">
@@ -103,12 +104,12 @@
                   width="260" height="195" alt="Большая корзинка для игрушек.">
               </picture>
             </a>
-            <div class="product__container product-text"><a class="product-text__link" href="toy-basket.html">
-                <h3 class="product-text__title product-title">Большая корзинка для игрушек</h3>
+            <div class="product__container product-text  product-text--toy-basket"><a class="product-text__link" href="toy-basket.html">
+                <h3 class="product-text__title product-title product-title--toy-basket">Большая корзинка <br> для игрушек</h3>
               </a>
               <p class="product-text__description">Диаметр 30 см, высота 30 см</p>
               <div class="product-text__wrapper"><b class="product-text__price">1 500 руб.</b> <button
-                  class="product-text__button product-text__button--cart" type="button"><span
+                  class="product-text__button product-text__button--cart-toys" type="button"><span
                     class="visually-hidden">Добавить товар в корзину.</span></button></div>
             </div>
           </li>
@@ -117,14 +118,16 @@
     </section>
     <section class="production-process">
       <div class="production-process__container">
-        <h3 class="production-process__title">Процесс производства</h3><a class="production-process__link video">
+        <h3 class="production-process__title">Процесс производства</h3>
+        <a class="production-process__link video">
           <picture>
             <source media="(min-width: 1150px)"
               srcset="img/catalog/video-desktop.jpg, img/catalog/video-desktop2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/catalog/video-tablet.jpg, img/catalog/video-tablet2x.jpg 2x">
             <img class="video__image" src="img/catalog/video-mobile.jpg" srcset="img/catalog/video-mobile2x.jpg 2x"
               width="260" height="150" alt="Процесс производства.">
-          </picture><span class="video__play-button"></span>
+          </picture>
+          <span class="video__play-button"></span>
         </a>
         <p class="production-process__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео
           о том, как появляются наши товары.</p><a class="production-process__make-order button button--catalog-button"

@@ -11,7 +11,10 @@
     width: 88px;
     display: block;
   }
-  &--decor-line::after {
+
+  &--decor-line::after,
+  &--decor-line-tel::after,
+  &--decor-line-email::after {
     content: "";
     position: absolute;
     width: 200px;
@@ -23,5 +26,17 @@
     @media (min-width: @tablet-width) {
       position: static;
     }
+  }
+
+  &--decor-line-tel::after {
+    content: "";
+    top: 12px;
+  }
+
+  &--decor-line-email::after {
+    content: "";
+    width: 182px;
+    left: 78px;
+    top: 12px;
   }
 }

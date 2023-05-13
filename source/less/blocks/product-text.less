@@ -12,7 +12,7 @@
 
   @media (min-width: @tablet-width) {
     width: 335px;
-    padding: 27px 39px 25.5px 34px;
+    padding: 27px 39px 24.5px 32px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -21,6 +21,19 @@
   @media (min-width: @desktop-width) {
     min-height: 197px;
     width: 316px;
+    padding: 26px 39px 24.5px 27px;
+  }
+
+  &--toy-basket {
+    padding: 25px 27px 26.5px 28px;
+
+    @media (min-width: @tablet-width) {
+      padding: 25px 27px 24.5px 32px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 26px 39px 24.5px 27px;
+    }
   }
 }
 
@@ -33,6 +46,7 @@
   height: 18px;
   border: none;
   cursor: pointer;
+  display: block;
 
   -webkit-mask: url("../../img/stack.svg#cart") no-repeat;
   mask: url("../../img/stack.svg#cart") no-repeat;
@@ -47,6 +61,16 @@
 
   &:active {
     background-color: fade(#63d1bb, 30%);
+  }
+
+  @media (min-width: @tablet-width) {
+    margin: 0 -8px 6px 0;
+  }
+
+  &--cart-toys {
+    @media (min-width: @tablet-width) and (max-width: 1149px) {
+      margin: 0 4px 6px 0;
+    }
   }
 }
 
