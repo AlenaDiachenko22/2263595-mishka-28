@@ -12,11 +12,7 @@
     font-size: 20px;
     line-height: 30px;
     width: 100%;
-    bottom: 6px;
-  }
-
-  @media (min-width: @desktop-width) {
-    bottom: 2px;
+    bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -71,7 +67,7 @@
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    padding: 24px 33px 31px 36px;
+    padding: 25px 33px 34px 36px;
   }
 
   &:hover {
@@ -85,8 +81,6 @@
   &--light::after {
     content: "";
     position: absolute;
-
-    -webkit-mask: url("../../img/stack.svg#interior") no-repeat;
     mask: url("../../img/stack.svg#interior") no-repeat;
     background-color: fade(#149080, 50%);
 
@@ -109,7 +103,6 @@
     content: "";
     position: absolute;
 
-    -webkit-mask: url("../../img/stack.svg#toy") no-repeat;
     mask: url("../../img/stack.svg#toy") no-repeat;
     background-color: fade(#149080, 50%);
 
