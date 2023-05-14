@@ -5,7 +5,7 @@
   color: @element-color;
   padding: 0;
   position: absolute;
-  bottom: -125px;
+  bottom: -116px;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -13,10 +13,6 @@
     line-height: 30px;
     width: 100%;
     bottom: 0;
-  }
-
-  @media (min-width: @desktop-width) {
-    bottom: -12px;
   }
 
   @media (min-width: @desktop-width) {
@@ -67,8 +63,12 @@
   text-decoration: none;
   color: @element-color;
   display: block;
-  padding: 25px 33px 34px 36px;
+  padding: 24px 33px 31px 30px;
   box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    padding: 25px 33px 34px 36px;
+  }
 
   &:hover {
     padding: 25px 33px 38px 36px;
@@ -81,8 +81,6 @@
   &--light::after {
     content: "";
     position: absolute;
-
-    -webkit-mask: url("../../img/stack.svg#interior") no-repeat;
     mask: url("../../img/stack.svg#interior") no-repeat;
     background-color: fade(#149080, 50%);
 
@@ -105,7 +103,6 @@
     content: "";
     position: absolute;
 
-    -webkit-mask: url("../../img/stack.svg#toy") no-repeat;
     mask: url("../../img/stack.svg#toy") no-repeat;
     background-color: fade(#149080, 50%);
 

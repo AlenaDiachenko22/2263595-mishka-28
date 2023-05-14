@@ -1,10 +1,9 @@
 .slider-button {
   box-sizing: border-box;
-  width: 130px;
-  height: 52px;
   border: 1px solid @border-color;
   background-color: transparent;
   z-index: 2;
+  padding: 0;
 
   &:hover {
     opacity: 0.6;
@@ -16,18 +15,26 @@
 
   &--back {
     border-right: 1px;
-    background: url("../../img/stack.svg#button-back") no-repeat;
+    background-image: url("../../img/stack.svg#button-back");
+    background-repeat: no-repeat;
     background-position: center;
     background-size: 50px 26px;
+    width: 130px;
+    height: 52px;
   }
 
   &--next {
-    background: url("../../img/stack.svg#button-next") no-repeat;
+    background-image: url("../../img/stack.svg#button-next");
+    background-repeat: no-repeat;
     background-position: center;
     background-size: 50px 26px;
+    width: 130px;
+    height: 52px;
   }
 
   @media (min-width: @tablet-width) {
     border: none;
+    width: 50px;
+    height: 26px;
   }
 }

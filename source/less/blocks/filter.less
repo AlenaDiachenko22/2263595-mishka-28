@@ -22,12 +22,12 @@
     margin: 0 auto;
     font-size: 17px;
     line-height: 30px;
-    margin-bottom: 80.15px;
+    margin-bottom: 58px;
   }
 
   @media (min-width: @desktop-width) {
     width: 702px;
-    margin-bottom: 81.5px;
+    margin-bottom: 62px;
   }
 }
 
@@ -35,6 +35,18 @@
   padding: 0;
   margin: 0;
   list-style: none;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 168px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 115px;
+  }
+}
+
+.filter__item:not(:last-child) {
+  margin-bottom: 22px;
 }
 
 @media (min-width: @tablet-width) {
@@ -42,13 +54,17 @@
     display: flex;
     align-items: baseline;
   }
+
+  .filter__item:not(:last-child) {
+    margin-bottom: 24px;
+  }
 }
 
 .filter__group {
   border: none;
   padding: 0;
   margin: 0;
-  margin-bottom: 31px;
+  margin-bottom: 32px;
 
   @media (min-width: @tablet-width) {
     margin: 0;
@@ -59,11 +75,10 @@
   @media (min-width: @tablet-width) {
     width: @tablet-width;
     display: flex;
-    gap: 79px;
     margin: 0 auto;
     padding: 0 50px 50px 50px;
-    align-items: baseline;
     box-sizing: border-box;
+    position: relative;
   }
 
   @media (min-width: @desktop-width) {
@@ -73,20 +88,27 @@
   }
 }
 
+.filter__form-wrapper {
+  @media (min-width: @tablet-width) {
+    width: 100vw;
+    background-color: #f1f1f1;
+  }
+}
+
 .filter__checkbox-wrapper {
   @media (min-width: @tablet-width) {
     display: flex;
-    column-gap: 68px;
     padding: 50px;
     box-sizing: border-box;
     width: @tablet-width;
     margin: 0 auto;
-    align-items: baseline;
+    position: relative;
   }
 
   @media (min-width: @desktop-width) {
     width: @desktop-width;
-    padding: 50px 168px 50px 112px;
+    column-gap: 69px;
+    padding: 49px 168px 50px 112px;
   }
 }
 
@@ -108,12 +130,6 @@
   margin: 0;
   padding: 0;
   list-style: none;
-
-  @media (min-width: @tablet-width) {
-    display: flex;
-    flex-direction: column;
-    row-gap: 24px;
-  }
 }
 
 .filter__extra-wrapper {
@@ -125,11 +141,12 @@
     display: grid;
     grid-template-columns: 88px 79px 63px 109px 329px;
     grid-template-rows: min-content 52px min-content;
+    position: relative;
   }
 
   @media (min-width: @desktop-width) {
     width: @desktop-width;
-    padding: 50px 225px 50px 112px;
+    padding: 49px 225px 49px 112px;
     grid-template-columns: 88px 25px 230px 140px 330px;
     grid-template-rows: min-content 49px min-content;
   }
@@ -140,8 +157,13 @@
 
   @media (min-width: @tablet-width) {
     display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+    justify-content: flex-end;
+  }
+}
+
+.filter__contacts-item:not(:last-child) {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 24px;
   }
 }
 
@@ -149,17 +171,55 @@
   list-style: none;
   padding: 0;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 168px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 114px;
+  }
 }
 
 .filter__title {
   margin-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    left: 50px;
+    top: 22.5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 111px;
+    top: 20px;
+  }
 }
 
-.filter__input {
-  margin-bottom: 24px;
+.filter__title-name {
+  margin-bottom: 30px;
 
-  &--last {
+  @media (min-width: @tablet-width) {
     margin: 0;
+    position: absolute;
+    left: 0;
+    top: 16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 20px;
+  }
+}
+
+.filter__contacts-label {
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    left: 0;
+    top: 16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 18px;
   }
 }
 
@@ -167,7 +227,15 @@
   border: none;
   padding: 0;
   margin: 0;
-  margin-bottom: 26px;
+
+  @media (max-width: 767px) {
+    margin-bottom: 26px;
+  }
+
+  @media (min-width: 767px) {
+    margin: 0;
+    position: relative;
+  }
 }
 
 .filter__input-wrapper {
@@ -193,7 +261,7 @@
   border: 2px solid @text-color;
   box-sizing: border-box;
   resize: none;
-  padding: 17px;
+  padding: 15px;
   margin-bottom: 17px;
   display: block;
   font-size: 17px;
@@ -224,6 +292,7 @@
     width: 501px;
     grid-row: 1/2;
     grid-column: 3/5;
+    margin-bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -234,7 +303,7 @@
 }
 
 .filter__submit {
-  margin-bottom: 55px;
+  margin-bottom: 54px;
 
   @media (min-width: @tablet-width) {
     grid-row: 3/4;
@@ -263,6 +332,7 @@
     line-height: 30px;
     align-self: end;
     justify-self: end;
+    margin-bottom: 10px;
   }
 
   @media (min-width: @desktop-width) {
@@ -283,7 +353,7 @@
 }
 
 .filter__contacts-input {
-  margin-bottom: 28px;
+  margin-bottom: 27px;
   background-color: transparent;
 
   @media (min-width: @tablet-width) {
@@ -304,6 +374,7 @@
 .filter__label {
   @media (min-width: @tablet-width) {
     margin-right: 24px;
+    padding: 0;
   }
 }
 
@@ -325,12 +396,13 @@
 .filter__mail-icon {
   position: absolute;
   right: 3px;
-  top: 16px;
+  top: 14px;
   opacity: 0.2;
   display: block;
 
   @media (min-width: @tablet-width) {
     right: 22px;
+    top: 16px;
   }
 
   @media (min-width: @desktop-width) {
@@ -349,17 +421,18 @@
 
 .filter__phone-icon {
   position: absolute;
-  right: 3px;
-  top: 16px;
+  right: 6px;
+  top: 10px;
   opacity: 0.2;
   display: block;
 
   @media (min-width: @tablet-width) {
-    right: 22px;
+    right: 25px;
   }
 
   @media (min-width: @desktop-width) {
-    right: 4px;
+    right: 10px;
+    top: 12px;
   }
 }
 

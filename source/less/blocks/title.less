@@ -14,11 +14,23 @@
   &--main {
     font-size: 27px;
     text-align: center;
+    width: 260px;
+    margin: 0 auto;
 
     @media (max-width: @tablet-width) {
       width: 260px;
-      margin: 0 auto;
     }
+
+    @media (min-width: @tablet-width) {
+      font-size: 43px;
+      line-height: 50px;
+      width: 668px;
+    }
+  }
+
+  &--main-catalog,
+  &--main-form {
+    font-size: 27px;
 
     @media (min-width: @tablet-width) {
       font-size: 43px;
@@ -26,7 +38,14 @@
     }
 
     @media (min-width: @desktop-width) {
-      margin: 0 auto;
+      font-size: 53px;
+      line-height: 57px;
+    }
+  }
+
+  &--reviews {
+    @media (min-width: @tablet-width) {
+      line-height: 57px;
     }
   }
 
