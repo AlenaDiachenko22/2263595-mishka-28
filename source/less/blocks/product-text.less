@@ -22,6 +22,7 @@
     min-height: 197px;
     width: 316px;
     padding: 26px 39px 24.5px 27px;
+    justify-content: space-between;
   }
 
   &--toy-basket {
@@ -45,21 +46,16 @@
   width: 21px;
   height: 18px;
   border: none;
-  cursor: pointer;
   display: block;
+  fill: fade(#000000, 20%);
 
-  mask: url("../../img/stack.svg#cart") no-repeat;
-
-  mask-size: 21px 18px;
-
-  background-color: fade(#000000, 20%);
-
-  &:hover {
-    background-color: fade(#63d1bb, 100%);
+  &:hover .product-text__icon {
+    fill: fade(#63d1bb, 100%);
+    opacity: 100%;
   }
 
-  &:active {
-    background-color: fade(#63d1bb, 30%);
+  &:active .product-text__icon {
+    fill: fade(#63d1bb, 30%);
   }
 
   @media (min-width: @tablet-width) {
@@ -83,7 +79,7 @@
   margin-bottom: 6px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 6.5px;
+    margin-bottom: 7px;
   }
 }
 
@@ -132,5 +128,9 @@
 
   @media (min-width: @tablet-width) {
     margin-top: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 36.5px;
   }
 }

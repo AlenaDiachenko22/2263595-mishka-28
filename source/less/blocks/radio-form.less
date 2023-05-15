@@ -1,8 +1,12 @@
 .radio-form__control {
   position: relative;
   display: flex;
-  align-items: center;
   min-height: 40px;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    align-items: stretch;
+  }
 }
 
 .radio-form__item:not(:last-child) {
@@ -65,3 +69,15 @@
     margin-left: 80px;
   }
 }
+
+.radio-form__input:focus-within + .radio-form__mark {
+  outline: 2px solid @main-color;
+  outline-offset: 4px;
+}
+
+.radio-form__mark--top {
+  @media (min-width: @tablet-width) {
+    margin-top: 5px;
+  }
+}
+

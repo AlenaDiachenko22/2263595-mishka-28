@@ -49,7 +49,7 @@ export const html = () => {
 // Scripts
 
 export const scripts = () => {
-  return gulp.src('source/script.js')
+  return gulp.src('source/js/script.js')
   .pipe(terser())
   .pipe(gulp.dest('build/js'));
 }
@@ -98,7 +98,7 @@ const sprite = () => {
 
 export const copy = (done) => {
   gulp.src([
-    'source/fonts/*.{wiff2,woff}',
+    'source/fonts/*.{woff2,woff}',
     'source/*.ico',
   ], {
     base: 'source'
