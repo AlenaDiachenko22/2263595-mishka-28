@@ -18,12 +18,11 @@
     <div class="main-header__container"><a class="main-header__logo" href="index.html">
         <picture>
           <source media="(min-width: 1150px)" srcset="img/logo/site-logo-desktop.svg">
-          <source media="(min-width: 768px)" srcset="img/logo/site-logo-tablet.svg"><img
-            class="main-header__logo-image" src="img/logo/site-logo-mobile.svg" width="86" height="35"
-            alt="Интернет-магазин «Мишка».">
+          <source media="(min-width: 768px)" srcset="img/logo/site-logo-tablet.svg"><img class="main-header__logo-image"
+            src="img/logo/site-logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Мишка».">
         </picture>
       </a>
-      <nav class="main-navigation main-navigation--opened main-navigation--nojs"><button class="main-navigation__toggle"
+      <nav class="main-navigation main-navigation--closed main-navigation--nojs"><button class="main-navigation__toggle"
           type="button"><span class="visually-hidden">Закрыть меню</span></button>
         <ul class="main-navigation__list site-list">
           <li class="site-list__item site-list__item--catalog-menu"><a class="site-list__item-link"
@@ -66,16 +65,26 @@
                   alt="Зайчик-попрыгайчик.">
               </picture>
             </a>
-            <div class="product__container product-text"><a class="product-text__link" href="hare.html">
-                <h3 class="product-text__title product-title">Зайчик-попрыгайчик</h3>
-              </a>
-              <p class="product-text__description">Рост 30 см, вес 200 г</p>
-              <div class="product-text__wrapper"><b class="product-text__price">1 200 руб.</b> <button
-                  class="product-text__button product-text__button--cart" type="button"><span
-                    class="visually-hidden">Добавить товар в корзину.</span></button></div>
+            <div class="product__container product-text">
+              <div class="product-text__description-wrapper">
+                <a class="product-text__link" href="hare.html">
+                  <h3 class="product-text__title product-title">Зайчик-попрыгайчик</h3>
+                </a>
+                <p class="product-text__description">Рост 30 см, вес 200 г</p>
+              </div>
+              <div class="product-text__wrapper">
+                <b class="product-text__price">1 200 руб.</b>
+                <a class="product-text__button product-text__button--cart" href="modal.html">
+                  <svg class="product-text__icon" width="21" height="18">
+                    <use xlink:href="img/sprite.svg#cart"></use>
+                  </svg>
+                  <span class="visually-hidden">Добавить товар в корзину.</span>
+                </a>
+              </div>
             </div>
           </li>
-          <li class="catalog-list__item product"><a class="product__link" href="laundry-basket.html">
+          <li class="catalog-list__item product">
+            <a class="product__link" href="laundry-basket.html">
               <picture>
                 <source media="(min-width: 1150px)"
                   srcset="img/catalog/laundry-basket-desktop.jpg, img/catalog/laundry-basket-desktop2x.jpg 2x">
@@ -85,16 +94,26 @@
                   srcset="img/catalog/laundry-basket2x.jpg 2x" width="260" height="195" alt="Корзинка для белья.">
               </picture>
             </a>
-            <div class="product__container product-text"><a class="product-text__link" href="laundry-basket.html">
-                <h3 class="product-text__title product-title">Корзинка для белья</h3>
-              </a>
-              <p class="product-text__description">Диаметр 15 см, высота 10 см</p>
-              <div class="product-text__wrapper"><b class="product-text__price">690 руб.</b> <button
-                  class="product-text__button product-text__button--cart" type="button"><span
-                    class="visually-hidden">Добавить товар в корзину.</span></button></div>
+            <div class="product__container product-text">
+              <div class="product-text__description-wrapper">
+                <a class="product-text__link" href="laundry-basket.html">
+                  <h3 class="product-text__title product-title">Корзинка для белья</h3>
+                </a>
+                <p class="product-text__description">Диаметр 15 см, высота 10 см</p>
+              </div>
+              <div class="product-text__wrapper">
+                <b class="product-text__price">690 руб.</b>
+                <a class="product-text__button product-text__button--cart" href="modal.html">
+                  <svg class="product-text__icon" width="21" height="18">
+                    <use xlink:href="img/sprite.svg#cart"></use>
+                  </svg>
+                  <span class="visually-hidden">Добавить товар в корзину.</span>
+                </a>
+              </div>
             </div>
           </li>
-          <li class="catalog-list__item product"><a class="product__link" href="toy-basket.html">
+          <li class="catalog-list__item product">
+            <a class="product__link" href="toy-basket.html">
               <picture>
                 <source media="(min-width: 1150px)"
                   srcset="img/catalog/toys-basket-desktop.jpg, img/catalog/toys-basket-desktop2x.jpg 2x">
@@ -104,13 +123,23 @@
                   width="260" height="195" alt="Большая корзинка для игрушек.">
               </picture>
             </a>
-            <div class="product__container product-text  product-text--toy-basket"><a class="product-text__link" href="toy-basket.html">
-                <h3 class="product-text__title product-title product-title--toy-basket">Большая корзинка <br> для игрушек</h3>
-              </a>
-              <p class="product-text__description">Диаметр 30 см, высота 30 см</p>
-              <div class="product-text__wrapper"><b class="product-text__price">1 500 руб.</b> <button
-                  class="product-text__button product-text__button--cart-toys" type="button"><span
-                    class="visually-hidden">Добавить товар в корзину.</span></button></div>
+            <div class="product__container product-text  product-text--toy-basket">
+              <div class="product-text__description-wrapper">
+                <a class="product-text__link" href="toy-basket.html">
+                  <h3 class="product-text__title product-title product-title--toy-basket">Большая корзинка <br> для
+                    игрушек</h3>
+                </a>
+                <p class="product-text__description">Диаметр 30 см, высота 30 см</p>
+              </div>
+              <div class="product-text__wrapper">
+                <b class="product-text__price">1 500 руб.</b>
+                <a class="product-text__button product-text__button--cart" href="modal.html">
+                  <svg class="product-text__icon" width="21" height="18">
+                    <use xlink:href="img/sprite.svg#cart"></use>
+                  </svg>
+                  <span class="visually-hidden">Добавить товар в корзину.</span>
+                </a>
+              </div>
             </div>
           </li>
         </ul>
@@ -119,7 +148,7 @@
     <section class="production-process">
       <div class="production-process__container">
         <h3 class="production-process__title">Процесс производства</h3>
-        <a class="production-process__link video">
+        <a class="production-process__link video" href="#">
           <picture>
             <source media="(min-width: 1150px)"
               srcset="img/catalog/video-desktop.jpg, img/catalog/video-desktop2x.jpg 2x">
@@ -127,7 +156,7 @@
             <img class="video__image" src="img/catalog/video-mobile.jpg" srcset="img/catalog/video-mobile2x.jpg 2x"
               width="260" height="150" alt="Процесс производства.">
           </picture>
-          <span class="video__play-button"></span>
+          <button class="video__play-button" type="button"></button>
         </a>
         <p class="production-process__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео
           о том, как появляются наши товары.</p><a class="production-process__make-order button button--catalog-button"
@@ -147,13 +176,30 @@
         <div class="main-footer__social social">
           <h3 class="visually-hidden">Мы в социальных сетях.</h3>
           <ul class="social__list social-list">
-            <li class="social-list__item social-list__item"><a class="social-list__link social-list__link--vkontacte"
-                href="https://vk.com/htmlacademy"><span class="visually-hidden">Мы в Вконтакте.</span></a></li>
-            <li class="social-list__item"><a class="social-list__link social-list__link--youtube"
-                href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">Мы в Ютубе.</span></a>
+            <li class="social-list__item social-list__item">
+              <a class="social-list__link social-list__link--vkontacte" href="https://vk.com/htmlacademy">
+                <svg class="social-list__icon" width="28" height="22">
+                  <use xlink:href="img/sprite.svg#vkontakte"></use>
+                </svg>
+                <span class="visually-hidden">Мы в Вконтакте.</span>
+              </a>
             </li>
-            <li class="social-list__item"><a class="social-list__link social-list__link--telegram"
-                href="https://t.me/htmlacademy"><span class="visually-hidden">Мы в Телеграме.</span></a></li>
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <svg class="social-list__icon" width="28" height="22">
+                  <use xlink:href="img/sprite.svg#youtube"></use>
+                </svg>
+                <span class="visually-hidden">Мы в Ютубе.</span>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--telegram" href="https://t.me/htmlacademy">
+                <svg class="social-list__icon" width="28" height="22">
+                  <use xlink:href="img/sprite.svg#telegram"></use>
+                </svg>
+                <span class="visually-hidden">Мы в Телеграме.</span>
+              </a>
+            </li>
           </ul>
         </div>
         <div class="main-footer__copyright copyright">

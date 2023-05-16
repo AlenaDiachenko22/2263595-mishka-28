@@ -10,7 +10,6 @@
 .checkbox__control {
   position: relative;
   display: flex;
-  align-items: center;
 }
 
 .checkbox__mark {
@@ -68,4 +67,10 @@
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
   }
+}
+
+.checkbox__input:focus-within + .checkbox__mark {
+  outline: 2px solid @main-color;
+  outline-offset: 4px;
+  border-radius: 4px;
 }

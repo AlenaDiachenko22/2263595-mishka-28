@@ -1,7 +1,9 @@
 .social-list {
   display: flex;
-  width: 142px;
-  justify-content: space-between;
+  width: 250px;
+  gap: 29px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .social-list__item {
@@ -11,26 +13,13 @@
 }
 
 .social-list__link {
-  background-color: @main-color;
+  fill: @main-color;
 
   &:hover {
-    background-color: fade(#46c1ae, 100%);
+    fill: fade(#46c1ae, 100%);
   }
 
   &:active {
-    background-color: fade(#46c1ae, 30%);
-  }
-
-  &--vkontacte {
-    .footer-icon();
-    mask: url("../../img/stack.svg#icon-vk") no-repeat;
-  }
-  &--youtube {
-    .footer-icon();
-    mask: url("../../img/stack.svg#icon-youtube") no-repeat;
-  }
-  &--telegram {
-    .footer-icon();
-    mask: url("../../img/stack.svg#icon-telegram") no-repeat;
+    fill: fade(#46c1ae, 30%);
   }
 }

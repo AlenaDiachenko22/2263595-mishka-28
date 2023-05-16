@@ -23,7 +23,7 @@
             alt="Интернет-магазин «Мишка».">
         </picture>
       </a>
-      <nav class="main-navigation main-navigation--opened main-navigation--nojs"><button class="main-navigation__toggle"
+      <nav class="main-navigation main-navigation--closed main-navigation--nojs"><button class="main-navigation__toggle"
           type="button"><span class="visually-hidden">Закрыть меню</span></button>
         <ul class="main-navigation__list site-list">
           <li class="site-list__item site-list__item--catalog-menu"><a class="site-list__item-link"
@@ -57,13 +57,14 @@
             <h2 class="category__title title title--main">Милые штуки ручной <br> работы для дома</h2>
             <div class="category__list category-list">
               <div class="category-list__item-wrapper category-list__item-wrapper--light">
-                <div class="category-list__item category-list__item"><a
-                    class="category-list__link category-list__link--light"
-                    href="interior-items.html">Предметы<br>интерьера</a></div>
+                <div class="category-list__item">
+                  <a class="category-list__link category-list__link--light"
+                    href="interior-items.html">Предметы<br>интерьера</a>
+                  </div>
               </div>
               <div class="category-list__item-wrapper category-list__item-wrapper--dark">
-                <div class="category-list__item category-list__item"><a
-                    class="category-list__link category-list__link--dark" href="kids-toys.html">Детские<br>игрушки</a>
+                <div class="category-list__item">
+                  <a class="category-list__link category-list__link--dark" href="kids-toys.html">Детские<br>игрушки</a>
                 </div>
               </div>
             </div>
@@ -207,13 +208,30 @@
         <div class="main-footer__social social">
           <h3 class="visually-hidden">Мы в социальных сетях.</h3>
           <ul class="social__list social-list">
-            <li class="social-list__item social-list__item"><a class="social-list__link social-list__link--vkontacte"
-                href="https://vk.com/htmlacademy"><span class="visually-hidden">Мы в Вконтакте.</span></a></li>
-            <li class="social-list__item"><a class="social-list__link social-list__link--youtube"
-                href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">Мы в Ютубе.</span></a>
+            <li class="social-list__item social-list__item">
+              <a class="social-list__link social-list__link--vkontacte" href="https://vk.com/htmlacademy">
+                <svg class="social-list__icon" width="28" height="22">
+                  <use xlink:href="img/sprite.svg#vkontakte"></use>
+                </svg>
+                <span class="visually-hidden">Мы в Вконтакте.</span>
+              </a>
             </li>
-            <li class="social-list__item"><a class="social-list__link social-list__link--telegram"
-                href="https://t.me/htmlacademy"><span class="visually-hidden">Мы в Телеграме.</span></a></li>
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <svg class="social-list__icon" width="28" height="22">
+                  <use xlink:href="img/sprite.svg#youtube"></use>
+                </svg>
+                <span class="visually-hidden">Мы в Ютубе.</span>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--telegram" href="https://t.me/htmlacademy">
+                <svg class="social-list__icon" width="28" height="22">
+                  <use xlink:href="img/sprite.svg#telegram"></use>
+                </svg>
+                <span class="visually-hidden">Мы в Телеграме.</span>
+              </a>
+            </li>
           </ul>
         </div>
         <div class="main-footer__copyright copyright">
@@ -242,7 +260,8 @@
           <li class="modal-form__item radio"><label class="radio__control"><input
                 class="visually-hidden radio__radio-button" type="radio" name="product-size" value="L"> <span
                 class="radio__mark">L</span></label></li>
-        </ul><button class="modal-form__add modal-form__add--modal-button button" type="submit">Добавить</button>
+        </ul>
+        <button class="modal-form__add modal-form__add--modal-button button" type="submit">Добавить</button>
       </fieldset>
     </form>
   </div>
