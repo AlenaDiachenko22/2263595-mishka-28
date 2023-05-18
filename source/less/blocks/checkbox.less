@@ -72,5 +72,9 @@
 .checkbox__input:focus-within + .checkbox__mark {
   outline: 2px solid @main-color;
   outline-offset: 4px;
-  border-radius: 4px;
+  border-radius: 2px;
+}
+
+.checkbox__input:disabled + .checkbox__mark {
+  opacity: 0.2;
 }

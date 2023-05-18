@@ -305,6 +305,12 @@
 .filter__submit {
   margin-bottom: 54px;
 
+  &:focus {
+    outline: 2px solid @main-color;
+    border-radius: 2px;
+    outline-offset: 4px;
+  }
+
   @media (min-width: @tablet-width) {
     grid-row: 3/4;
     grid-column: 1/4;
