@@ -24,4 +24,10 @@
   border: 2px solid @main-color-light;
 }
 
+.radio__radio-button:disabled + .radio__mark {
+  opacity: 0.2;
+}
 
+.radio__radio-button:disabled:hover + .radio__mark {
+  border: 2px solid fade(#444444, 10%);
+}

@@ -75,9 +75,13 @@
   outline-offset: 4px;
 }
 
+.radio-form__input:disabled + .radio-form__mark {
+  border-color: @main-color;
+  opacity: 0.2;
+}
+
 .radio-form__mark--top {
   @media (min-width: @tablet-width) {
     margin-top: 5px;
   }
 }
-

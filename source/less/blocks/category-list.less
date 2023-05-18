@@ -143,13 +143,15 @@
       width: 100%;
       background-position: 448px 30px;
     }
+  }
+
+  @media (min-width: @desktop-width) {
     &--dark {
       width: 100%;
       background-position: 430px 31px;
     }
   }
 }
-
 
 .category-list__link--light:hover::after {
   background-color: fade(#149080, 70%);
@@ -174,4 +176,3 @@
 .category-list__link--dark:active::after {
   background-color: fade(#149080, 30%);
 }
-
