@@ -1,9 +1,13 @@
 .contacts-list {
   padding: 0;
 
-  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
   }
 }
 
