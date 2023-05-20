@@ -7,11 +7,9 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 1050px;
-    display: grid;
-    grid-template-columns: 62px 112px 327px 23px;
-    grid-template-rows: 79px min-content 34.5px min-content 84.5px;
-    grid-column: 1/2;
+    width: 350px;
+    grid-column: 2/3;
+    grid-row: 2/3;
   }
 }
 
@@ -41,8 +39,10 @@
 
   @media (min-width: @desktop-width) {
     margin: 0;
+    margin-bottom: 34.5px;
     grid-column: 3/4;
     grid-row: 2/3;
+    width: 327px;
   }
 }
 
@@ -78,7 +78,8 @@
   @media (min-width: @desktop-width) {
     margin: 0;
     grid-column: 2/3;
-    grid-row: 2/3;
+    grid-row: 4/5;
+    padding-top: 14px;
   }
 }
 
@@ -90,7 +91,7 @@
     width: 1050px;
     display: grid;
     grid-template-columns: 174px 350px 527px;
-    grid-template-rows: min-content min-content;
+    grid-template-rows: 79px min-content 84.5px min-content;
     margin-bottom: 105px;
   }
 }
